@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistec | Gremio y Servicio Técnico de Alarmas en Mar del Plata</title>
-    <meta name="description" content="Asistec Mar del Plata: Especialistas en instalación y servicio técnico de alarmas DSC, cámaras Hikvision y monitoreo 24/7. Expertos en NTLink y App Click.">
-    <meta name="keywords" content="gremio alarmas, servicio tecnico dsc mar del plata, instalacion hikvision, monitoreo 24/7, ntlink, app click, seguridad electronica">
+    <title>Asistec | Alarmas y Cámaras de Seguridad en Mar del Plata | Gremio DSC y Hikvision</title>
+    <meta name="description" content="Servicio técnico especializado en Mar del Plata. Instalación de alarmas DSC, cámaras Hikvision, comunicadores NTLink y App Click. Monitoreo 24hs y soporte a gremio.">
+    <meta name="keywords" content="alarmas mar del plata, servicio tecnico dsc, instalacion camaras hikvision, seguridad electronica mar del plata, monitoreo 24 horas, ntlink mar del plata, app click alarmas">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
@@ -20,7 +21,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; color: var(--negro); background: var(--blanco); scroll-behavior: smooth; line-height: 1.6; overflow-x: hidden; }
 
-        /* HEADER & NAVIGATION */
         header {
             display: flex;
             justify-content: space-between;
@@ -33,20 +33,12 @@
         .logo-container img { height: 70px; width: auto; transition: 0.3s; }
         
         nav { display: flex; align-items: center; }
-        nav a { 
-            margin-left: 30px; 
-            text-decoration: none; 
-            color: var(--negro); 
-            font-weight: 500; 
-            font-size: 0.95rem;
-            transition: 0.3s; 
-        }
+        nav a { margin-left: 30px; text-decoration: none; color: var(--negro); font-weight: 500; font-size: 0.95rem; transition: 0.3s; }
         nav a:hover { color: var(--rojo-asistec); }
 
         .menu-toggle { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
         .menu-toggle span { width: 25px; height: 3px; background: var(--negro); transition: 0.3s; }
 
-        /* HERO SECTION */
         .hero {
             padding: 100px 8%;
             background: linear-gradient(135deg, rgba(18,18,18,0.9) 0%, rgba(18,18,18,0.7) 100%), url('vechiulos.jpg') center/cover;
@@ -67,47 +59,30 @@
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
         }
 
-        /* MARCAS - ICONOS MÁS GRANDES Y VISIBLES */
-        .marcas { 
-            padding: 60px 8%; 
-            display: flex; 
-            justify-content: center; 
-            gap: 60px; /* Más espacio entre ellos */
-            flex-wrap: wrap; 
-            align-items: center;
-            background: var(--blanco);
-        }
-        .marcas img { 
-            height: 55px; /* Altura incrementada */
-            width: auto;
-            filter: grayscale(1); 
-            opacity: 0.6; 
-            transition: 0.4s ease;
-        }
-        .marcas img:hover { 
-            filter: grayscale(0); 
-            opacity: 1; 
-            transform: scale(1.1); /* Efecto de agrandado al pasar el mouse */
-        }
+        .marcas { padding: 60px 8%; display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; align-items: center; background: var(--blanco); }
+        .marcas img { height: 55px; width: auto; filter: grayscale(1); opacity: 0.6; transition: 0.4s ease; }
+        .marcas img:hover { filter: grayscale(0); opacity: 1; transform: scale(1.1); }
 
-        /* SERVICIOS */
         .servicios { padding: 60px 8%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; background: var(--gris-claro); }
         .card { padding: 40px 25px; border-radius: 20px; background: var(--blanco); box-shadow: var(--sombra); text-align: center; }
         .card h3 { color: var(--rojo-asistec); margin-bottom: 10px; }
 
-        /* GALERIA */
-        .galeria { padding: 80px 8%; text-align: center; }
+        /* SECCIÓN NOSOTROS OPTIMIZADA SEO */
+        .nosotros-texto { padding: 80px 8%; text-align: center; max-width: 900px; margin: 0 auto; }
+        .nosotros-texto h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--negro); }
+        .nosotros-texto p { font-size: 1.1rem; color: #555; margin-bottom: 40px; }
+
+        .galeria { padding: 0 8% 80px 8%; text-align: center; }
         .grid-fotos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
         .grid-fotos img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; box-shadow: var(--sombra); }
 
-        /* CONTACTO */
         .contacto { padding: 80px 8%; background: var(--negro); color: var(--blanco); border-radius: 40px 40px 0 0; }
         .contacto-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
         
-        form input, form textarea { width: 100%; padding: 15px; margin-bottom: 10px; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 10px; }
-        .btn-enviar { background: var(--rojo-asistec); color: white; border: none; padding: 15px; cursor: pointer; width: 100%; border-radius: 10px; font-weight: 700; }
+        form input, form textarea { width: 100%; padding: 15px; margin-bottom: 10px; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 10px; font-family: inherit; }
+        .btn-enviar { background: var(--rojo-asistec); color: white; border: none; padding: 15px; cursor: pointer; width: 100%; border-radius: 10px; font-weight: 700; transition: 0.3s; }
+        .btn-enviar:hover { background: #b71c1c; }
 
-        /* RESPONSIVE DESIGN */
         @media (max-width: 992px) {
             header { padding: 10px 5%; }
             .menu-toggle { display: flex; }
@@ -119,14 +94,6 @@
             }
             nav.active { left: 0; }
             nav a { margin: 15px 0; font-size: 1.1rem; }
-            .marcas { gap: 40px; padding: 40px 5%; }
-            .marcas img { height: 40px; }
-        }
-
-        @media (max-width: 480px) {
-            .logo-container img { height: 55px; }
-            .hero { border-radius: 0; }
-            .contacto { border-radius: 0; }
         }
     </style>
 </head>
@@ -134,13 +101,11 @@
 
 <header>
     <div class="logo-container">
-        <img src="asistec.jpg" alt="Asistec Logo">
+        <img src="asistec.jpg" alt="Asistec Seguridad Electrónica Mar del Plata">
     </div>
     
     <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
     </div>
 
     <nav id="nav-links">
@@ -152,88 +117,99 @@
 </header>
 
 <section class="hero">
-    <h1>Gremio de Seguridad Electrónica en <span>Mar del Plata</span></h1>
-    <p>Instalación y servicio técnico profesional de Alarmas DSC, Cámaras Hikvision y comunicadores NTLink.</p>
-    <a href="https://wa.me/5492236102142" class="btn-wa">WhatsApp Directo</a>
+    <h1>Seguridad Electrónica Integral en <span>Mar del Plata</span></h1>
+    <p>Especialistas en técnica y gremio. Instalación profesional de Alarmas DSC, Cámaras Hikvision y sistemas NTLink con monitoreo 24hs.</p>
+    <a href="https://wa.me/5492236102142" class="btn-wa">Consultar por WhatsApp</a>
 </section>
 
 <section class="marcas" id="marcas">
-    <img src="dsc.jpg" alt="DSC - Alarmas">
-    <img src="hikvison.png" alt="Hikvision - Cámaras">
-    <img src="ntlink.jpg" alt="NTLink - Comunicadores">
-    <img src="click.jpg" alt="App Click - Control">
+    <img src="dsc.jpg" alt="Servicio Técnico Alarmas DSC">
+    <img src="hikvison.png" alt="Instalación Cámaras Hikvision">
+    <img src="ntlink.jpg" alt="Comunicadores NTLink Mar del Plata">
+    <img src="click.jpg" alt="App Click Control de Alarmas">
 </section>
 
 <section class="servicios" id="servicios">
     <div class="card">
-        <h3>Alarmas</h3>
-        <p>Expertos en DSC y NTLink. Protección de alta tecnología para tu hogar o comercio.</p>
+        <h3>Sistemas de Alarmas</h3>
+        <p>Instalación y reparación de centrales DSC. Configuración de comunicadores NTLink para reporte inmediato a central de monitoreo.</p>
     </div>
     <div class="card">
-        <h3>Cámaras</h3>
-        <p>Sistemas Hikvision con monitoreo remoto desde tu celular en tiempo real.</p>
+        <h3>Cámaras de Seguridad</h3>
+        <p>Tecnología Hikvision líder en el mercado. Visualización remota en tiempo real desde cualquier dispositivo móvil.</p>
     </div>
     <div class="card">
-        <h3>Soporte Técnico</h3>
-        <p>Atención especializada a gremio y particulares con respuesta inmediata.</p>
+        <h3>Servicio Técnico Gremio</h3>
+        <p>Brindamos soporte especializado y tercerizado para empresas de seguridad y técnicos independientes en Mar del Plata.</p>
     </div>
 </section>
 
-<section class="galeria" id="nosotros">
+<section class="nosotros-texto" id="nosotros">
+    <h2>Líderes en Seguridad Electrónica</h2>
+    <p>En <strong>Asistec</strong> contamos con más de 21 años de trayectoria en el sector de la seguridad electrónica en <strong>Mar del Plata</strong>. Nos especializamos en brindar soluciones robustas para hogares, comercios y empresas, utilizando marcas de primera línea como <strong>DSC</strong> y <strong>Hikvision</strong>. Nuestro compromiso es la respuesta inmediata y el asesoramiento técnico profesional, garantizando que su sistema de monitoreo 24hs y la <strong>App Click</strong> funcionen siempre a la perfección.</p>
+</section>
+
+<section class="galeria">
     <div class="grid-fotos">
-        <img src="servicios.jpg" alt="Servicio Técnico">
-        <img src="trabajos.jpg" alt="Instalación">
-        <img src="vechiulos.jpg" alt="Asistec MDP">
+        <img src="servicios.jpg" alt="Técnico de alarmas en Mar del Plata">
+        <img src="trabajos.jpg" alt="Instalación de cámaras de seguridad">
+        <img src="vechiulos.jpg" alt="Flota de Asistec Seguridad">
     </div>
 </section>
 
 <section class="contacto" id="contacto">
     <div class="contacto-grid">
         <div class="info-contacto">
-            <h2>Contacto</h2>
-            <p>📞 0223 610-2142</p>
-            <p>📧 asistecalarmas@hotmail.com</p>
-            <p>📍 Mar del Plata</p>
-            <div style="margin-top: 20px;">
-                <a href="https://th-th.facebook.com/Asistecseguridadelectronica/" style="color: white; margin-right: 15px; text-decoration: none;">Facebook</a>
-                <a href="https://www.instagram.com/asistecseguridadelectronica/" style="color: white; text-decoration: none;">Instagram</a>
+            <h2>Hablemos de su Seguridad</h2>
+            <p>Atención personalizada en toda la zona de Mar del Plata y alrededores.</p>
+            <p style="margin-top: 20px;">📞 <strong>0223 610-2142</strong></p>
+            <p>📧 <strong>asistecalarmas@hotmail.com</strong></p>
+            <p>📍 Mar del Plata, Buenos Aires</p>
+            <div style="margin-top: 30px;">
+                <a href="https://th-th.facebook.com/Asistecseguridadelectronica/" style="color: white; margin-right: 15px; text-decoration: none; font-weight: 600;">Facebook</a>
+                <a href="https://www.instagram.com/asistecseguridadelectronica/" style="color: white; text-decoration: none; font-weight: 600;">Instagram</a>
             </div>
         </div>
         <form id="contact-form">
-            <input type="text" name="user_name" placeholder="Tu Nombre" required>
-            <input type="email" name="user_email" placeholder="Tu Email" required>
-            <textarea name="message" placeholder="¿Cómo te ayudamos?" rows="4" required></textarea>
+            <input type="text" name="user_name" placeholder="Nombre y Apellido" required>
+            <input type="email" name="user_email" placeholder="Correo Electrónico" required>
+            <textarea name="message" placeholder="¿En qué podemos ayudarlo hoy?" rows="4" required></textarea>
             <button type="submit" class="btn-enviar">Enviar Consulta</button>
         </form>
     </div>
 </section>
 
-<script type="text/javascript">
-   (function(){
-      // Reemplaza con tu Public Key de EmailJS
-      emailjs.init("V0jihgiwuY7vXPco2"); 
-   })();
+<footer style="text-align: center; padding: 40px; font-size: 0.85rem; opacity: 0.6;">
+    <p>&copy; 2026 ASISTEC Seguridad Electrónica - Mar del Plata. Especialistas en Alarmas y CCTV.</p>
+</footer>
 
-   document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
+<script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    document.querySelectorAll('#nav-links a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
 
-      // Cambia el texto del botón para dar feedback al usuario
-      const btn = event.target.querySelector('button');
-      btn.innerText = 'Enviando...';
+    (function(){
+       emailjs.init("V0jihgiwuY7vXPco2"); 
+    })();
 
-      // Estos IDs son los que copiaste de tu panel de EmailJS
-      emailjs.sendForm('service_8x3rwh8', 'template_i26krpn', this)
-         .then(function() {
-            alert('¡Mensaje enviado con éxito! Nos contactaremos pronto.');
-            btn.innerText = 'Enviar Consulta';
-            document.getElementById('contact-form').reset(); // Limpia el formulario
-         }, function(error) {
-            alert('Fallo el envío... Por favor intenta nuevamente o llama al 0223 610-2142');
-            btn.innerText = 'Enviar Consulta';
-            console.log('Error:', error);
-         });
-   });
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+       const btn = event.target.querySelector('button');
+       btn.innerText = 'Enviando...';
+
+       emailjs.sendForm('service_8x3rwh8', 'template_i26krpn', this)
+          .then(function() {
+             alert('¡Mensaje enviado con éxito! Nos contactaremos a la brevedad.');
+             btn.innerText = 'Enviar Consulta';
+             document.getElementById('contact-form').reset();
+          }, function(error) {
+             alert('Error al enviar. Intente por WhatsApp al 0223 610-2142');
+             btn.innerText = 'Enviar Consulta';
+          });
+    });
 </script>
-
 </body>
 </html>
